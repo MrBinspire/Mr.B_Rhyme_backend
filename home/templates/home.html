@@ -1,0 +1,19 @@
+<section>
+  <p>The Result</p>
+
+  <form method="POST" action="{% url 'add_word' %}">
+    {% csrf_token %}
+    {{form}}
+    <label>Search the Word</label><br />
+    <input type="text" id="input" name="word" /><br />
+    <input type="submit" value="Submit" /> <br />
+
+    <p>Rhymes</p>
+    <br />
+    {% for values in data %}
+    <input value={{values}}>
+    </br>
+
+    {% endfor %}
+  </form>
+</section>

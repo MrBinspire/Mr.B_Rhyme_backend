@@ -1,0 +1,14 @@
+<section>
+  <p>TODAY'S WORD OF THE DAY IS:</p><br/>
+  <p>{{word_of_the_day}}</p>
+
+  <form method="POST">
+    {% csrf_token %}
+
+    <input type="text" id="input_word" name="input_word" />
+    <input type="submit" />
+    {% if is_word_repeat == True %}
+    <p>{{feedback}}</p>
+    {% endif %}
+  </form>
+</section>

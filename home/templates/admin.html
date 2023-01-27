@@ -1,0 +1,21 @@
+<section>
+<form method='POST'>
+  {% csrf_token %}
+  <section>
+    <p>Enter a word for the day:</p>
+    <input type='text' name='word_of_the_day'>
+    <input type="submit" value='Submit'>
+  </section>
+</form>
+
+  <form method='POST'>
+  {% csrf_token %}
+  <p>The Input Words are</p>
+  {% for i in all_input_words %}
+  <p>{{i}}</p>
+  <input type="radio" name={{i}} id="Accept" value="Accept">Accept<br> 
+  <input type="radio" name={{i}} id="Decline" value="Decline">Decline<br>
+  {% endfor %}
+  <input type='submit' value='Submit'>
+  </form>
+</section>
