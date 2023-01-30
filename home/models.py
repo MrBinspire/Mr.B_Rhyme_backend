@@ -9,7 +9,7 @@ class Rhymes(models.Model):
     user = models.CharField(max_length=250)
     word = models.CharField(max_length=250)
     date = models.CharField(max_length=250, default=date.today())
-    word_of_the_day = models.CharField(max_length=250, default="")
+    Word_of_the_day = models.CharField(max_length=250, default="")
     is_accepted = models.BooleanField(default=False)
     
 

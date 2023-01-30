@@ -3,7 +3,7 @@ from .models import *
 
 
 class RhymesAdmin(admin.ModelAdmin):
-    list_display = ("id", "user", "word", "word_of_the_day")
+    list_display = ("id", "user", "word", "Word_of_the_day")
 
 
 class WordOfTheDayAdmin(admin.ModelAdmin):
