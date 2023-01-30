@@ -97,7 +97,7 @@ class HomeInputApi(APIView):
             user_data = {
                 "user": request.data["user"],
                 "word": request.data["word"],
-                "word_of_the_day": wordOfTheDay,
+                "Word_of_the_day": wordOfTheDay,
             }
             serializer = RhymeSerializer(data=user_data)
             if serializer.is_valid():
