@@ -6,13 +6,14 @@ from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
 
 
 class RegisterSerializer(serializers.ModelSerializer):
-    
+
     email = serializers.EmailField(max_length=250)
     username = serializers.CharField(max_length=250)
     password = serializers.CharField(max_length=250)
+
     class Meta:
         model = User
-        fields = ['email','username','password']
+        fields = ["email", "username", "password"]
 
     def create(self, validated_data):
         user = User.objects.create_user(
@@ -22,21 +23,25 @@ class RegisterSerializer(serializers.ModelSerializer):
         )
         return user
 
+
 class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
     @classmethod
     def get_token(cls, user):
         token = super().get_token(user)
 
         # Add custom claims
-        token['username'] = user.username
+        token["username"] = user.username
+        token["id"] = user.id
         # ...
 
         return token
 
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
-        fields = ['username','password']
+        fields = ["username", "password"]
+
 
 class RhymeSerializer(serializers.ModelSerializer):
     class Meta:
