@@ -8,4 +8,5 @@ urlpatterns = [
     path('auth/register', RegisterApi.as_view()),
     path('auth/login', MyTokenObtainPairView.as_view()),
     path('auth/login-refresh',TokenRefreshView.as_view()),
+    path('auth/login-group',UserApi.as_view()),
 ]

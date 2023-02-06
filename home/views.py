@@ -126,17 +126,18 @@ class AcceptOrRejectApi(APIView):
         colR = db["home_rejected"]
         colA = db["home_accepted"]
         user_obj = Rhymes.objects.get(word=request.data["word"])
+        print(user_obj)
         if user_obj is not None:
             serializer = RhymeSerializer(user_obj, many=False)
             user_obj.is_accepted = request.data["is_accepted"]
             user_obj.save()
             if request.data["is_accepted"] == True:
                 print(serializer.data)
-                colA.insert(serializer.data)
+                colA.insert_one(serializer.data)
                 collections.delete_one(serializer.data)
             else:
                 print(serializer.data)
-                colR.insert(serializer.data)
+                colR.insert_one(serializer.data)
                 collections.delete_one(serializer.data)
             return Response({"status": "ok"})
         return Response({"Status": "Fail"})
