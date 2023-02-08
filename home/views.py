@@ -87,7 +87,8 @@ class HomeInputApi(APIView):
             col2 = db["home_wordoftheday"]
             wordOfTheDay = ""
             wordOfTheDay_list = list(
-                col2.find({"date": str(date.today())}, {"_id": 0, "date": 0, "id": 0})
+                col2.find({"date": str(date.today())}, {
+                          "_id": 0, "date": 0, "id": 0})
             )
             wordOfTheDay_1 = wordOfTheDay_list[0]
             for i in wordOfTheDay_1.values():
@@ -125,22 +126,22 @@ class AcceptOrRejectApi(APIView):
     def post(self, request):
         colR = db["home_rejected"]
         colA = db["home_accepted"]
-        user_obj = Rhymes.objects.get(word=request.data["word"])
-        print(user_obj)
-        if user_obj is not None:
-            serializer = RhymeSerializer(user_obj, many=False)
-            user_obj.is_accepted = request.data["is_accepted"]
-            user_obj.save()
-            if request.data["is_accepted"] == True:
-                print(serializer.data)
-                colA.insert_one(serializer.data)
-                collections.delete_one(serializer.data)
-            else:
-                print(serializer.data)
-                colR.insert_one(serializer.data)
-                collections.delete_one(serializer.data)
-            return Response({"status": "ok"})
-        return Response({"Status": "Fail"})
+        try:
+            for item in request.data:
+                user_obj = Rhymes.objects.get(word=request.data[item]["word"])
+                if user_obj is not None:
+                    serializer = RhymeSerializer(user_obj, many=False)
+                    user_obj.is_accepted = request.data[item]["is_accepted"]
+                    user_obj.save()
+                    if request.data[item]["is_accepted"] == True:
+                        colA.insert_one(serializer.data)
+                        collections.delete_one(serializer.data)
+                    else:
+                        colR.insert_one(serializer.data)
+                        collections.delete_one(serializer.data)
+            return Response({"Status": "Pass"})
+        except Exception as e:
+            return Response({"Status": "Fail"})
 
 
 # To search for rhyming words.
