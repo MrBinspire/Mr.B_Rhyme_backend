@@ -23638,6 +23638,7 @@ INFO 2023-02-07 20:30:03,069 basehttp 16880 12088 "POST /api/accept-or-reject HT
 INFO 2023-02-07 20:30:06,680 basehttp 16880 12088 "GET /api/accept-or-reject HTTP/1.1" 200 2
 INFO 2023-02-07 20:30:06,685 basehttp 16880 17872 "GET /api/word-of-the-day HTTP/1.1" 200 58
 INFO 2023-02-07 20:30:06,695 basehttp 16880 8144 "GET /api/search-rhyming-words HTTP/1.1" 200 123
+<<<<<<< HEAD
 INFO 2023-02-08 12:01:35,562 autoreload 9868 8972 Watching for file changes with StatReloader
 INFO 2023-02-08 12:04:15,979 basehttp 9868 13996 "GET /api/accept-or-reject HTTP/1.1" 200 2
 INFO 2023-02-08 12:04:15,984 basehttp 9868 5572 "GET /api/word-of-the-day HTTP/1.1" 200 58
@@ -24573,3 +24574,5 @@ INFO 2023-02-15 18:12:41,499 basehttp 2240 11324 "POST /api/auth/login-refresh H
 INFO 2023-02-15 18:16:42,508 basehttp 2240 11324 "POST /api/auth/login-refresh HTTP/1.1" 200 571
 INFO 2023-02-15 18:20:43,509 basehttp 2240 11324 "POST /api/auth/login-refresh HTTP/1.1" 200 571
 INFO 2023-02-15 18:24:44,514 basehttp 2240 11324 "POST /api/auth/login-refresh HTTP/1.1" 200 571
+=======
+>>>>>>> 601ccb05560c20b0edaa2e30f802f94419dbf8cd
