@@ -19,7 +19,7 @@ class RegisterApi(APIView):
             serializer = RegisterSerializer(data=request.data)
             if not serializer.is_valid():
                 print(serializer.errors)
-                return Response({"status": 403, "message": "Something went wrong"},status=status.HTTP_403_FORBIDDEN)
+                return Response({"status": 403, "message": "Something went wrong"})
 
             user_info = col1.find()
             values = list(user_info)
