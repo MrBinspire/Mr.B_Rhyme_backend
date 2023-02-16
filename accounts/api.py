@@ -5,12 +5,6 @@ from rest_framework_simplejwt.views import TokenObtainPairView
 from django.contrib.auth.models import Group
 from .helpers import *
 from rest_framework import status
-import pymongo
-from rest_framework import status
-
-client = pymongo.MongoClient("localhost", 27017)
-db = client["NanditaDb"]
-col1 = db["auth_user"]
 
 
 class RegisterApi(APIView):
@@ -19,39 +13,22 @@ class RegisterApi(APIView):
             serializer = RegisterSerializer(data=request.data)
             if not serializer.is_valid():
                 print(serializer.errors)
-                return Response({"status": 403, "message": "Something went wrong"},status=status.HTTP_403_FORBIDDEN)
+                return Response({"status": 403, "message": "Something went wrong"})
 
-            user_info = col1.find()
-            values = list(user_info)
-            flag = False
-            for i in values:
-                if request.data["email"] == i["email"]:
-                    flag = True
-
-            if flag == True:
-                return Response(
-                    {"Status": "Fail", "Message": "Email already used"},
-                    status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                )
-            else:
-                serializer.save()
-                user = User.objects.get(username=serializer.data["username"])
-                group = Group.objects.get(name="Users")
-                user.groups.add(group)
-                return Response(
-                    {
-                        "status": "Pass",
-                        "payload": serializer.data,
-                        "message": "Registration successful!!",
-                    },
-                    status=status.HTTP_200_OK,
-                )
+            serializer.save()
+            user = User.objects.get(username=serializer.data["username"])
+            group = Group.objects.get(name="Users")
+            user.groups.add(group)
+            return Response(
+                {
+                    "status": 200,
+                    "payload": serializer.data,
+                    "message": "Registration successful!!",
+                }
+            )
         except Exception as e:
-            content = {
-                "text": "Username already exists!",
-                "error": str(e),
-            }
-            return Response(content, status=status.HTTP_400_BAD_REQUEST)
+            content = {"text": "You already have an account!", "error": str(e)}
+            return Response(content, status=status.HTTP_403_FORBIDDEN)
 
 
 class MyTokenObtainPairView(TokenObtainPairView):
