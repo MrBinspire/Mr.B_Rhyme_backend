@@ -10,7 +10,7 @@ from .helpers import *
 import logging
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
-logger = logging.getLogger("django")
+logger = logging.getLogger(__file__)
 
 client = pymongo.MongoClient("localhost", 27017)
 db = client["NanditaDb"]
@@ -148,6 +148,9 @@ class AcceptOrRejectApi(APIView):
 class SearchRhymingWordsApi(APIView):
     def get(self, request):
         logger.info("inside the Sarching API")
+        logger.error("inside the Sarching API")
+        logger.debug("inside the Sarching API")
+
         user_info = Accepted.objects.all()
         req_data = []
         for i in user_info:

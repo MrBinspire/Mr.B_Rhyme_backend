@@ -179,7 +179,7 @@ LOGGING = {
             "formatter": "simpleRe",
         },
         "django_errors": {
-            "level": "DEBUG",
+            "level": "ERROR",
             "class": "logging.FileHandler",
             "filename": "./logs/django_errors.log",
             "formatter": "simpleRe",
