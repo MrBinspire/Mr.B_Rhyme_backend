@@ -7,6 +7,8 @@ from .helpers import *
 from rest_framework import status
 import pymongo
 from rest_framework import status
+import logging
+logger = logging.getLogger("django")
 
 client = pymongo.MongoClient("localhost", 27017)
 db = client["NanditaDb"]
@@ -48,6 +50,8 @@ class RegisterApi(APIView):
                     )
             else:
                 print(serializer.errors)
+                logger.info("checking else condition in serializer.")
+                
                 return Response(
                     {"status": 403, "message": "Something went wrong"},
                     status=status.HTTP_403_FORBIDDEN,
