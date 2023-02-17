@@ -10,7 +10,7 @@ from .helpers import *
 import logging
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
-logger = logging.getLogger()
+logger = logging.getLogger("django")
 
 client = pymongo.MongoClient("localhost", 27017)
 db = client["NanditaDb"]
