@@ -175,7 +175,13 @@ LOGGING = {
         "file": {
             "level": "INFO",
             "class": "logging.FileHandler",
-            "filename": "./logs/debug2.log",
+            "filename": "./logs/django_info.log",
+            "formatter": "simpleRe",
+        },
+        "django_errors": {
+            "level": "DEBUG",
+            "class": "logging.FileHandler",
+            "filename": "./logs/django_errors.log",
             "formatter": "simpleRe",
         },
     },
