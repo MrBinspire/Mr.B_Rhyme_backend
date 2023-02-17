@@ -17,34 +17,40 @@ class RegisterApi(APIView):
     def post(self, request):
         try:
             serializer = RegisterSerializer(data=request.data)
-            if not serializer.is_valid():
-                print(serializer.errors)
-                return Response({"status": 403, "message": "Something went wrong"})
-        
-            user_info = col1.find()
-            values = list(user_info)
-            flag = False
-            for i in values:
-                if request.data["email"] == i["email"]:
-                    flag = True
+            # if not serializer.is_valid():
+            #     print(serializer.errors)
+            #     return Response({"status": 403, "message": "Something went wrong"},status=status.HTTP_403_FORBIDDEN)
+            if serializer.is_valid():
+                user_info = col1.find()
+                values = list(user_info)
+                flag = False
+                for i in values:
+                    if request.data["email"] == i["email"]:
+                        flag = True
 
-            if flag == True:
-                return Response(
-                    {"Status": "Fail", "Message": "Email already used"},
-                    status=status.HTTP_500_INTERNAL_SERVER_ERROR,
-                )
+                if flag == True:
+                    return Response(
+                        {"Status": "Fail", "Message": "Email already used"},
+                        status=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    )
+                else:
+                    serializer.save()
+                    user = User.objects.get(username=serializer.data["username"])
+                    group = Group.objects.get(name="Users")
+                    user.groups.add(group)
+                    return Response(
+                        {
+                            "status": "Pass",
+                            "payload": serializer.data,
+                            "message": "Registration successful!!",
+                        },
+                        status=status.HTTP_200_OK,
+                    )
             else:
-                serializer.save()
-                user = User.objects.get(username=serializer.data["username"])
-                group = Group.objects.get(name="Users")
-                user.groups.add(group)
+                print(serializer.errors)
                 return Response(
-                    {
-                        "status": "Pass",
-                        "payload": serializer.data,
-                        "message": "Registration successful!!",
-                    },
-                    status=status.HTTP_200_OK,
+                    {"status": 403, "message": "Something went wrong"},
+                    status=status.HTTP_403_FORBIDDEN,
                 )
         except Exception as e:
             content = {
