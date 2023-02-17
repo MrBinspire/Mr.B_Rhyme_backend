@@ -37,8 +37,10 @@ class RegisterApi(APIView):
                     )
                 else:
                     serializer.save()
-                    user = User.objects.get(username=serializer.data["username"])
+                    user = User.objects.get(
+                        username=serializer.data["username"])
                     group = Group.objects.get(name="Users")
+                    print("group=", group)
                     user.groups.add(group)
                     return Response(
                         {
@@ -51,7 +53,7 @@ class RegisterApi(APIView):
             else:
                 print(serializer.errors)
                 logger.info("checking else condition in serializer.")
-                
+
                 return Response(
                     {"status": 403, "message": "Something went wrong"},
                     status=status.HTTP_403_FORBIDDEN,
