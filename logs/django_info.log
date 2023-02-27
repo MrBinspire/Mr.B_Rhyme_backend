@@ -36,3 +36,9 @@ INFO 2023-02-27 16:43:49,771 basehttp 15756 13968 "GET /static/admin/js/filters.
 INFO 2023-02-27 16:43:49,901 basehttp 15756 7632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
 INFO 2023-02-27 16:43:49,949 basehttp 15756 7632 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
 INFO 2023-02-27 16:43:54,197 basehttp 15756 7632 "GET /admin/ HTTP/1.1" 200 8053
+INFO 2023-02-27 16:46:49,779 autoreload 13968 7632 Watching for file changes with StatReloader
+WARNING 2023-02-27 16:46:51,153 log 13968 16500 Not Found: /
+WARNING 2023-02-27 16:46:51,154 basehttp 13968 16500 "GET / HTTP/1.1" 404 3101
+INFO 2023-02-27 16:46:58,210 basehttp 13968 16500 "GET /admin/ HTTP/1.1" 200 8053
+INFO 2023-02-27 16:47:00,765 basehttp 13968 16500 "GET /admin/home/accepted/ HTTP/1.1" 200 12185
+INFO 2023-02-27 16:47:01,256 basehttp 13968 16500 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
