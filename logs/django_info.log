@@ -1,3 +1,38 @@
 INFO 2023-02-17 18:50:24,793 autoreload 13212 7348 Watching for file changes with StatReloader
 INFO 2023-02-17 18:51:03,239 autoreload 13212 7348 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\accounts\api.py changed, reloading.
 INFO 2023-02-17 18:51:04,723 autoreload 12856 16056 Watching for file changes with StatReloader
+INFO 2023-02-20 15:48:38,363 autoreload 9044 11652 Watching for file changes with StatReloader
+INFO 2023-02-27 16:42:36,723 autoreload 10564 21264 Watching for file changes with StatReloader
+INFO 2023-02-27 16:43:36,387 autoreload 15756 21020 Watching for file changes with StatReloader
+WARNING 2023-02-27 16:43:40,520 log 15756 13464 Not Found: /
+WARNING 2023-02-27 16:43:40,521 basehttp 15756 13464 "GET / HTTP/1.1" 404 3101
+WARNING 2023-02-27 16:43:40,660 log 15756 13464 Not Found: /favicon.ico
+WARNING 2023-02-27 16:43:40,660 basehttp 15756 13464 "GET /favicon.ico HTTP/1.1" 404 3152
+INFO 2023-02-27 16:43:47,286 basehttp 15756 13464 "GET /admin/ HTTP/1.1" 200 8053
+INFO 2023-02-27 16:43:47,378 basehttp 15756 13464 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,379 basehttp 15756 12432 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,380 basehttp 15756 7940 "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,381 basehttp 15756 7632 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,420 basehttp 15756 12432 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,420 basehttp 15756 13464 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,477 basehttp 15756 12432 "GET /static/admin/css/fonts.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,496 basehttp 15756 12432 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,497 basehttp 15756 13464 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,543 basehttp 15756 7940 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,646 basehttp 15756 7940 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,647 basehttp 15756 13464 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:47,651 basehttp 15756 12432 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,493 basehttp 15756 12432 "GET /admin/home/accepted/ HTTP/1.1" 200 12185
+INFO 2023-02-27 16:43:49,579 basehttp 15756 12432 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,580 basehttp 15756 7940 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,582 basehttp 15756 15332 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,582 basehttp 15756 13464 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,587 basehttp 15756 12432 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,588 basehttp 15756 7940 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,589 basehttp 15756 13968 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,594 basehttp 15756 13464 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,594 basehttp 15756 15332 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,771 basehttp 15756 13968 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:49,901 basehttp 15756 7632 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-02-27 16:43:49,949 basehttp 15756 7632 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2023-02-27 16:43:54,197 basehttp 15756 7632 "GET /admin/ HTTP/1.1" 200 8053
