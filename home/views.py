@@ -110,6 +110,23 @@ class HomeInputApi(APIView):
         except Exception as e:
             print(e)
 
+# To add more words after search.
+
+
+class AddAfterSearch(APIView):
+    def post(self, request):
+        req_data = {
+            "user": request.data['user'],
+            "word": request.data['word'],
+            "Word_of_the_day": request.data['Word_of_the_day']
+        }
+        serializer = RhymeSerializer(data=req_data)
+        if serializer.is_valid():
+            if check_duplicates(request.data) is not True:
+                serializer.save()
+                return Response({"Status": "OK"})
+        return Response({"Status": "Fail"})
+
 
 # To set the value of is_accepted to true or false.
 class AcceptOrRejectApi(APIView):
