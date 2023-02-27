@@ -42,3 +42,19 @@ WARNING 2023-02-27 16:46:51,154 basehttp 13968 16500 "GET / HTTP/1.1" 404 3101
 INFO 2023-02-27 16:46:58,210 basehttp 13968 16500 "GET /admin/ HTTP/1.1" 200 8053
 INFO 2023-02-27 16:47:00,765 basehttp 13968 16500 "GET /admin/home/accepted/ HTTP/1.1" 200 12185
 INFO 2023-02-27 16:47:01,256 basehttp 13968 16500 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-02-27 17:02:09,632 autoreload 20120 10856 Watching for file changes with StatReloader
+INFO 2023-02-27 17:10:34,647 autoreload 16924 1892 Watching for file changes with StatReloader
+WARNING 2023-02-27 17:10:36,864 log 16924 5024 Not Found: /
+WARNING 2023-02-27 17:10:36,865 basehttp 16924 5024 "GET / HTTP/1.1" 404 3101
+WARNING 2023-02-27 17:10:37,131 log 16924 5024 Not Found: /favicon.ico
+WARNING 2023-02-27 17:10:37,131 basehttp 16924 5024 "GET /favicon.ico HTTP/1.1" 404 3152
+INFO 2023-02-27 17:10:43,496 basehttp 16924 5024 "GET /admin/ HTTP/1.1" 200 8053
+INFO 2023-02-27 17:10:45,402 basehttp 16924 5024 "GET /admin/home/accepted/ HTTP/1.1" 200 12506
+INFO 2023-02-27 17:10:45,490 basehttp 16924 13452 "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2023-02-27 17:10:45,914 basehttp 16924 5024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-02-27 17:10:51,136 basehttp 16924 5024 "GET /admin/home/accepted/?q=rat HTTP/1.1" 200 8891
+INFO 2023-02-27 17:10:51,500 basehttp 16924 5024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-02-27 17:10:57,469 basehttp 16924 5024 "GET /admin/home/accepted/?q=greet HTTP/1.1" 200 8909
+INFO 2023-02-27 17:10:57,949 basehttp 16924 5024 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-02-27 17:11:00,364 basehttp 16924 5024 "GET /admin/home/accepted/?q=rat HTTP/1.1" 200 8891
+INFO 2023-02-27 17:11:04,991 basehttp 16924 5024 "GET /admin/home/accepted/ HTTP/1.1" 200 12506
