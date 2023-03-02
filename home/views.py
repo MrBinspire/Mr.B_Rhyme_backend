@@ -42,7 +42,7 @@ def home_search(request):
     return render(request, "home.html", context)
 
 
-# to submit a word of the day and get the list of them
+# to submit a word of the day and get the list of them----------------------------
 class WordOfTheDayApi(APIView):
     # authentication_classes = [JWTAuthentication]
     # permission_classes = [IsAuthenticated]
@@ -67,7 +67,7 @@ class WordOfTheDayApi(APIView):
         return Response({"Status": "Fail"})
 
 
-# To input rhyming words , save them and to display them.
+# To input rhyming words , save them and to display them.----------------------------------------------
 class HomeInputApi(APIView):
     # authentication_classes = [JWTAuthentication]
     # permission_classes = [IsAuthenticated]
@@ -110,9 +110,8 @@ class HomeInputApi(APIView):
         except Exception as e:
             print(e)
 
-# To add more words after search.
 
-
+# To add more words after search.-------------------------------------------------------------------------
 class AddAfterSearch(APIView):
     def post(self, request):
         req_data = {
@@ -128,7 +127,7 @@ class AddAfterSearch(APIView):
         return Response({"Status": "Fail"})
 
 
-# To set the value of is_accepted to true or false.
+# To set the value of is_accepted to true or false.---------------------------------------------------------
 class AcceptOrRejectApi(APIView):
     # authentication_classes = [JWTAuthentication]
     # permission_classes = [IsAuthenticated]
@@ -161,7 +160,7 @@ class AcceptOrRejectApi(APIView):
             return Response({"Status": "Fail"})
 
 
-# To search for rhyming words.
+# To search for rhyming words.-----------------------------------------------------------------------------------
 class SearchRhymingWordsApi(APIView):
     def get(self, request):
         logger.info("inside the Sarching API")
@@ -174,3 +173,9 @@ class SearchRhymingWordsApi(APIView):
             serializer = AcceptedSerializer(i, many=False)
             req_data.append(serializer.data)
         return Response(req_data)
+
+
+# ADDING RHYMING WORDS WITHOUT WORD OF THE DAY---------------------------------------------------------------------
+class AddRandomWords(APIView):
+    def post(self, request):
+        pass

@@ -21,7 +21,12 @@ class RejectedAdmin(admin.ModelAdmin):
     search_fields = ('word',)
 
 
+class RandomWordsAdmin(admin.ModelAdmin):
+    list_display = ("id", "ref_id", "date", "user", "word", "count")
+
+
 admin.site.register(Rhymes, RhymesAdmin)
 admin.site.register(WordOfTheDay, WordOfTheDayAdmin)
 admin.site.register(Accepted, AcceptedAdmin)
 admin.site.register(Rejected, RejectedAdmin)
+admin.site.register(RandomWords, RandomWordsAdmin)
