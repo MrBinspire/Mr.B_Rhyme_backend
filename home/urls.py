@@ -25,4 +25,5 @@ urlpatterns = [
     path("api/accept-or-reject", AcceptOrRejectApi.as_view(), name="accept-or-reject"),
     path("api/search-rhyming-words", SearchRhymingWordsApi.as_view(), name="search-rhyming-words"),
     path("api/add-after-search", AddAfterSearch.as_view(), name="add-after-search"),
+    path("api/add-random-words", AddRandomWords.as_view(), name="add-random-words"),
 ]

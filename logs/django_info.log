@@ -520,3 +520,200 @@ INFO 2023-03-02 20:32:38,113 basehttp 1348 21304 "GET /static/admin/img/icon-del
 INFO 2023-03-02 20:32:38,291 basehttp 1348 8644 "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 304 0
 INFO 2023-03-02 20:32:38,291 basehttp 1348 21304 "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 304 0
 INFO 2023-03-02 20:32:38,292 basehttp 1348 10752 "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 304 0
+INFO 2023-03-03 20:19:37,706 autoreload 7712 10988 Watching for file changes with StatReloader
+WARNING 2023-03-03 20:21:05,644 log 7712 6776 Method Not Allowed: /api/add-random-words
+WARNING 2023-03-03 20:21:05,644 basehttp 7712 6776 "GET /api/add-random-words HTTP/1.1" 405 40
+INFO 2023-03-03 20:21:10,741 basehttp 7712 6776 "POST /api/add-random-words HTTP/1.1" 200 17
+WARNING 2023-03-03 20:22:23,113 log 7712 6636 Not Found: /
+WARNING 2023-03-03 20:22:23,115 basehttp 7712 6636 "GET / HTTP/1.1" 404 3485
+WARNING 2023-03-03 20:22:23,355 log 7712 6636 Not Found: /favicon.ico
+WARNING 2023-03-03 20:22:23,356 basehttp 7712 6636 "GET /favicon.ico HTTP/1.1" 404 3536
+INFO 2023-03-03 20:22:42,397 basehttp 7712 6636 "GET /admin/ HTTP/1.1" 302 0
+INFO 2023-03-03 20:22:42,781 basehttp 7712 6636 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 2218
+INFO 2023-03-03 20:22:42,920 basehttp 7712 6636 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2023-03-03 20:22:46,298 basehttp 7712 6636 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2023-03-03 20:22:46,710 basehttp 7712 6636 "GET /admin/ HTTP/1.1" 200 8493
+INFO 2023-03-03 20:22:53,522 basehttp 7712 6636 "GET /admin/home/randomwords/ HTTP/1.1" 200 6612
+INFO 2023-03-03 20:22:53,567 basehttp 7712 6636 "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,573 basehttp 7712 6636 "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,584 basehttp 7712 6636 "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,585 basehttp 7712 16784 "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,587 basehttp 7712 18976 "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,588 basehttp 7712 4836 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,594 basehttp 7712 16784 "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,600 basehttp 7712 18976 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,605 basehttp 7712 19228 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,719 basehttp 7712 6636 "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2023-03-03 20:22:53,966 basehttp 7712 16564 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-03-03 20:22:54,014 basehttp 7712 16564 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2023-03-03 20:24:45,167 autoreload 7712 10988 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:24:46,251 autoreload 14112 14416 Watching for file changes with StatReloader
+INFO 2023-03-03 20:24:51,491 basehttp 14112 5540 "POST /api/add-random-words HTTP/1.1" 200 17
+INFO 2023-03-03 20:24:52,324 basehttp 14112 5540 "POST /api/add-random-words HTTP/1.1" 200 17
+INFO 2023-03-03 20:25:15,743 autoreload 14112 14416 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:25:17,044 autoreload 18208 2940 Watching for file changes with StatReloader
+INFO 2023-03-03 20:25:28,013 autoreload 18208 2940 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:25:29,328 autoreload 3560 8960 Watching for file changes with StatReloader
+INFO 2023-03-03 20:25:41,401 basehttp 3560 6416 "POST /api/add-random-words HTTP/1.1" 200 17
+INFO 2023-03-03 20:26:30,995 autoreload 3560 8960 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:26:32,383 autoreload 14640 8180 Watching for file changes with StatReloader
+INFO 2023-03-03 20:31:04,551 autoreload 14640 8180 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:31:05,972 autoreload 20280 18056 Watching for file changes with StatReloader
+INFO 2023-03-03 20:31:09,519 basehttp 20280 12960 "POST /api/add-random-words HTTP/1.1" 200 17
+INFO 2023-03-03 20:34:53,864 autoreload 20280 18056 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:34:55,531 autoreload 9736 13100 Watching for file changes with StatReloader
+ERROR 2023-03-03 20:34:56,074 log 9736 20436 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:34:56,077 basehttp 9736 20436 "POST /api/add-random-words HTTP/1.1" 500 99203
+INFO 2023-03-03 20:35:40,076 autoreload 9736 13100 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:35:41,508 autoreload 17168 13180 Watching for file changes with StatReloader
+ERROR 2023-03-03 20:35:45,703 log 17168 13768 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:35:45,707 basehttp 17168 13768 "POST /api/add-random-words HTTP/1.1" 500 99199
+ERROR 2023-03-03 20:35:55,762 log 17168 13768 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:35:55,764 basehttp 17168 13768 "POST /api/add-random-words HTTP/1.1" 500 99199
+ERROR 2023-03-03 20:43:42,199 log 17168 13768 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:43:42,200 basehttp 17168 13768 "POST /api/add-random-words HTTP/1.1" 500 99199
+INFO 2023-03-03 20:44:12,618 autoreload 17168 13180 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:44:13,840 autoreload 13832 13656 Watching for file changes with StatReloader
+ERROR 2023-03-03 20:44:25,504 log 13832 2392 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:44:25,506 basehttp 13832 2392 "POST /api/add-random-words HTTP/1.1" 500 99216
+ERROR 2023-03-03 20:45:04,732 log 13832 2392 Internal Server Error: /api/add-random-words
+Traceback (most recent call last):
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\django\views\generic\base.py", line 103, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py", line 190, in post
+    serializer.save()
+  File "C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\venv\lib\site-packages\rest_framework\serializers.py", line 198, in save
+    assert not hasattr(self, '_data'), (
+AssertionError: You cannot call `.save()` after accessing `serializer.data`.If you need to access data before committing to the database then inspect 'serializer.validated_data' instead. 
+ERROR 2023-03-03 20:45:04,733 basehttp 13832 2392 "POST /api/add-random-words HTTP/1.1" 500 99216
+INFO 2023-03-03 20:46:41,365 autoreload 13832 13656 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:46:42,606 autoreload 11232 11668 Watching for file changes with StatReloader
+INFO 2023-03-03 20:46:46,269 autoreload 11232 11668 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:46:47,643 autoreload 9736 15504 Watching for file changes with StatReloader
+INFO 2023-03-03 20:46:51,269 autoreload 9736 15504 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-03 20:46:52,238 autoreload 920 8132 Watching for file changes with StatReloader
+INFO 2023-03-03 20:46:58,731 basehttp 920 10304 "POST /api/add-random-words HTTP/1.1" 200 15

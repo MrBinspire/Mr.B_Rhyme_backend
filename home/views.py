@@ -178,4 +178,13 @@ class SearchRhymingWordsApi(APIView):
 # ADDING RHYMING WORDS WITHOUT WORD OF THE DAY---------------------------------------------------------------------
 class AddRandomWords(APIView):
     def post(self, request):
-        pass
+        req_data = {
+            "ref_id": request.data['ref_id'],
+            "user": request.data['user'],
+            "word": request.data['word']
+        }
+        serializer = RhymeSerializer(data=req_data)
+        if serializer.is_valid():
+            serializer.save()
+            return Response({"Status": "OK"})
+        return Response({"Status": "Fail"})

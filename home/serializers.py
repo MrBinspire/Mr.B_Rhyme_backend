@@ -4,12 +4,16 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 
 # User Serializer
+
+
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = ('id', 'username', 'email')
 
 # Register Serializer
+
+
 class RegisterSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
@@ -17,9 +21,11 @@ class RegisterSerializer(serializers.ModelSerializer):
         extra_kwargs = {'password': {'write_only': True}}
 
     def create(self, validated_data):
-        user = User.objects.create_user(validated_data['username'], validated_data['email'], validated_data['password'])
+        user = User.objects.create_user(
+            validated_data['username'], validated_data['email'], validated_data['password'])
 
         return user
+
 
 class LoginSerializer(serializers.Serializer):
     username = serializers.CharField()
@@ -43,7 +49,14 @@ class WordOfTheDaySerializer(serializers.ModelSerializer):
         model = WordOfTheDay
         fields = "__all__"
 
+
 class AcceptedSerializer(serializers.ModelSerializer):
     class Meta:
         model = Accepted
+        fields = "__all__"
+
+
+class RandomWordsSeraializer(serializers.ModelSerializer):
+    class Meta:
+        model = RandomWords
         fields = "__all__"
