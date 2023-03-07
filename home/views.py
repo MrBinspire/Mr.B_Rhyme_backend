@@ -102,7 +102,7 @@ class HomeInputApi(APIView):
             }
             serializer = RhymeSerializer(data=user_data)
             if serializer.is_valid():
-                if check_duplicates(request.data) is not True:
+                if check_duplicates_rhymes(request.data) or check_duplicates_accepted(request.data) is not True:
                     serializer.save()
                     print(serializer.data["word"])
                     return Response({"Status": "OK"})
@@ -121,7 +121,7 @@ class AddAfterSearch(APIView):
         }
         serializer = RhymeSerializer(data=req_data)
         if serializer.is_valid():
-            if check_duplicates(request.data) is not True:
+            if (check_duplicates_rhymes(request.data) or check_duplicates_accepted(request.data)) is not True:
                 serializer.save()
                 return Response({"Status": "OK"})
         return Response({"Status": "Fail"})

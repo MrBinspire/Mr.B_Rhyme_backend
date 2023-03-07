@@ -717,3 +717,48 @@ INFO 2023-03-03 20:46:47,643 autoreload 9736 15504 Watching for file changes wit
 INFO 2023-03-03 20:46:51,269 autoreload 9736 15504 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
 INFO 2023-03-03 20:46:52,238 autoreload 920 8132 Watching for file changes with StatReloader
 INFO 2023-03-03 20:46:58,731 basehttp 920 10304 "POST /api/add-random-words HTTP/1.1" 200 15
+INFO 2023-03-06 17:06:27,695 autoreload 12192 11248 Watching for file changes with StatReloader
+INFO 2023-03-07 12:07:28,683 autoreload 14432 11212 Watching for file changes with StatReloader
+INFO 2023-03-07 19:19:38,964 autoreload 14432 11212 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\tests.py changed, reloading.
+INFO 2023-03-07 19:19:41,190 autoreload 16828 7508 Watching for file changes with StatReloader
+INFO 2023-03-07 19:19:52,680 autoreload 16828 7508 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\tests.py changed, reloading.
+INFO 2023-03-07 19:19:54,090 autoreload 9756 5868 Watching for file changes with StatReloader
+INFO 2023-03-07 19:23:38,968 autoreload 9756 5868 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\tests.py changed, reloading.
+INFO 2023-03-07 19:23:40,274 autoreload 8208 12840 Watching for file changes with StatReloader
+INFO 2023-03-07 19:39:49,496 basehttp 8208 16928 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:39:52,015 basehttp 8208 16928 "POST /api/add-after-search HTTP/1.1" 200 17
+INFO 2023-03-07 19:41:05,959 basehttp 8208 16928 "POST /api/add-after-search HTTP/1.1" 200 17
+INFO 2023-03-07 19:44:06,906 autoreload 8208 12840 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:44:08,241 autoreload 2256 7560 Watching for file changes with StatReloader
+INFO 2023-03-07 19:44:39,393 autoreload 2256 7560 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:44:40,755 autoreload 14304 8784 Watching for file changes with StatReloader
+INFO 2023-03-07 19:45:19,517 autoreload 14304 8784 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:45:20,666 autoreload 2768 1968 Watching for file changes with StatReloader
+INFO 2023-03-07 19:46:57,163 autoreload 2768 1968 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:46:58,381 autoreload 5164 17800 Watching for file changes with StatReloader
+INFO 2023-03-07 19:47:12,590 autoreload 5164 17800 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:47:13,959 autoreload 16124 13428 Watching for file changes with StatReloader
+INFO 2023-03-07 19:47:25,732 autoreload 16124 13428 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:47:27,056 autoreload 19904 14916 Watching for file changes with StatReloader
+INFO 2023-03-07 19:48:49,502 autoreload 19904 14916 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:48:50,945 autoreload 9340 21268 Watching for file changes with StatReloader
+INFO 2023-03-07 19:51:45,445 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:51:53,878 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:51:55,317 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:51:56,653 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:51:57,540 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:51:58,889 basehttp 9340 15560 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:52:23,869 autoreload 9340 21268 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:52:25,312 autoreload 7712 6936 Watching for file changes with StatReloader
+INFO 2023-03-07 19:52:31,891 autoreload 7712 6936 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:52:33,048 autoreload 18256 16044 Watching for file changes with StatReloader
+INFO 2023-03-07 19:53:41,584 autoreload 18256 16044 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\helpers.py changed, reloading.
+INFO 2023-03-07 19:53:43,249 autoreload 12484 2768 Watching for file changes with StatReloader
+INFO 2023-03-07 19:53:44,751 basehttp 12484 8256 "POST /api/add-after-search HTTP/1.1" 200 15
+INFO 2023-03-07 19:54:29,404 autoreload 12484 2768 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:54:30,755 autoreload 8976 11196 Watching for file changes with StatReloader
+INFO 2023-03-07 19:54:32,282 basehttp 8976 13124 "POST /api/add-after-search HTTP/1.1" 200 17
+INFO 2023-03-07 19:56:54,779 autoreload 8976 11196 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 19:56:55,865 autoreload 7140 15988 Watching for file changes with StatReloader
+INFO 2023-03-07 20:05:21,019 autoreload 7140 15988 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-07 20:05:22,589 autoreload 20584 20836 Watching for file changes with StatReloader
