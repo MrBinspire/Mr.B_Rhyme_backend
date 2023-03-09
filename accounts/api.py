@@ -6,7 +6,6 @@ from django.contrib.auth.models import Group
 from .helpers import *
 from rest_framework import status
 import pymongo
-from rest_framework import status
 import logging
 logger = logging.getLogger("django")
 

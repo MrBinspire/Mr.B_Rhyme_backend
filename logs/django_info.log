@@ -934,3 +934,21 @@ Traceback (most recent call last):
     assert isinstance(response, HttpResponseBase), (
 AssertionError: Expected a `Response`, `HttpResponse` or `HttpStreamingResponse` to be returned from the view, but received a `<class 'NoneType'>`
 ERROR 2023-03-09 14:20:27,814 basehttp 20624 11944 "POST /api/home-input HTTP/1.1" 500 80894
+INFO 2023-03-09 14:28:32,493 basehttp 20624 4792 "GET /admin/home/rhymes/ HTTP/1.1" 200 14234
+INFO 2023-03-09 14:28:32,959 basehttp 20624 4792 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+WARNING 2023-03-09 14:28:33,035 log 20624 4792 Not Found: /favicon.ico
+WARNING 2023-03-09 14:28:33,036 basehttp 20624 4792 "GET /favicon.ico HTTP/1.1" 404 3536
+INFO 2023-03-09 14:28:34,374 basehttp 20624 4792 "GET /admin/home/rhymes/ HTTP/1.1" 200 14234
+INFO 2023-03-09 14:28:34,863 basehttp 20624 4792 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-03-09 14:37:09,290 basehttp 20624 740 "POST /admin/home/rhymes/ HTTP/1.1" 200 7545
+INFO 2023-03-09 14:37:09,334 basehttp 20624 740 "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2023-03-09 14:37:10,614 basehttp 20624 740 "POST /admin/home/rhymes/ HTTP/1.1" 302 0
+INFO 2023-03-09 14:37:11,025 basehttp 20624 740 "GET /admin/home/rhymes/ HTTP/1.1" 200 12180
+INFO 2023-03-09 14:37:11,490 basehttp 20624 740 "GET /admin/jsi18n/ HTTP/1.1" 200 3343
+INFO 2023-03-09 14:37:11,550 basehttp 20624 740 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2023-03-09 17:53:18,875 autoreload 20624 16340 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-09 17:53:20,800 autoreload 14204 13956 Watching for file changes with StatReloader
+INFO 2023-03-09 18:19:55,765 autoreload 14204 13956 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\home\views.py changed, reloading.
+INFO 2023-03-09 18:19:57,143 autoreload 16336 6820 Watching for file changes with StatReloader
+INFO 2023-03-09 18:20:03,725 autoreload 16336 6820 C:\VE\000_Client\Blake_Dictionary_Working - Copy\backend\accounts\api.py changed, reloading.
+INFO 2023-03-09 18:20:05,181 autoreload 21304 724 Watching for file changes with StatReloader

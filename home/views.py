@@ -10,6 +10,9 @@ from .helpers import *
 import logging
 from rest_framework_simplejwt.authentication import JWTAuthentication
 from rest_framework.permissions import IsAuthenticated
+from rest_framework import status
+
+
 logger = logging.getLogger(__file__)
 
 client = pymongo.MongoClient("localhost", 27017)
@@ -84,29 +87,29 @@ class HomeInputApi(APIView):
     def post(self, request):
         try:
             # ----------------------------------------------------------
-            col2 = db["home_wordoftheday"]
-            wordOfTheDay = ""
-            wordOfTheDay_list = list(
-                col2.find({"date": str(date.today())}, {
-                          "_id": 0, "date": 0, "id": 0})
-            )
-            wordOfTheDay_1 = wordOfTheDay_list[0]
-            for i in wordOfTheDay_1.values():
-                wordOfTheDay = i
+            # col2 = db["home_wordoftheday"]
+            # wordOfTheDay = ""
+            # wordOfTheDay_list = list(
+            #     col2.find({"date": str(date.today())}, {
+            #               "_id": 0, "date": 0, "id": 0})
+            # )
+            # wordOfTheDay_1 = wordOfTheDay_list[0]
+            # for i in wordOfTheDay_1.values():
+            #     wordOfTheDay = i
             # ------------------------------------------------------------
 
             user_data = {
                 "user": request.data["user"],
                 "word": request.data["word"],
-                "Word_of_the_day": wordOfTheDay,
+                "Word_of_the_day": request.data["Word_of_the_day"],
             }
             serializer = RhymeSerializer(data=user_data)
             if serializer.is_valid():
                 if (check_duplicates_rhymes(request.data) or check_duplicates_accepted(request.data)) is not True:
                     serializer.save()
                     print(serializer.data["word"])
-                    return Response({"Status": "OK"})
-            return Response({"Status": "Fail"})
+                    return Response({"Status": "OK"}, status=status.HTTP_200_OK)
+            return Response({"Status": "Fail"}, status=status.HTTP_400_BAD_REQUEST)
         except Exception as e:
             print(e)
 
